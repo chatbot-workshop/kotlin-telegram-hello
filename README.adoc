@@ -1,0 +1,49 @@
+= Hello Bot
+
+ifdef::env-github[:outfilesuffix: .adoc]
+
+image:https://travis-ci.org/chatbot-workshop/kotlin-telegram-hello.svg?branch=master["Build Status", link="https://travis-ci.org/chatbot-workshop/kotlin-telegram-hello"]
+image:https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg["gitmoji", link="https://gitmoji.carloscuesta.me"]
+
+**A very simple bot example for https://telegram.org/[Telegram] written in https://kotlinlang.org/[Kotlin].**
+
+*Copyright (C) 2018 Marcus Fihlon*
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+See the <<LICENSE#,LICENSE>> file for details.
+
+== Prior Knowledge
+
+. You should be familiar with the basics of the https://kotlinlang.org/[Kotlin] programming language.
+. You should be able to control your development environment.
+. You must have the messenger https://telegram.org[Telegram] installed and registered as a user.
+
+== Preparation
+
+. Go to https://web.telegram.org and login using your phone number.
+. Start a chat with the `@BotFather` and send him a `/newbot` message.
+. Answer the questions of the `@BotFather` and write down the *username* and *token* of your new bot.
+. Clone this repository: `git clone https://github.com/chatbot-workshop/kotlin-telegram-hello.git`
+
+== Configuration
+
+Open the file `src/main/resources/bot.conf` and enter the username and the token of your bot in the corresponding lines.
+
+== Running
+
+Run the bot within your IDE or use https://gradle.org/[Gradle] at the command line: `./gradlew run`
+
+== Testing
+
+. Go to https://web.telegram.org and login using your phone number.
+. Start a chat with your bot and send him a message.
+. You should receive a message saying `Hello, your name` with your name.
+
+== Slack Team
+
+For the participants of the workshop a slack team is available to answer questions regarding the preparations and to share additional information during the workshop. It is recommended to become a member there: https://bit.ly/chatbot-workshop-zurich
